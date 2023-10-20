@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style16.css">
+    <link rel="icon" href="2239866.png">
+</head>
+
+<body>
+    <section class="section">
+        <header>Survey Form</header>
+        <form action="#" class="form">
+            <div class="input-box">
+                <label>First Name</label>
+                <input type="text" placeholder="Enter First Name" required><br>
+                <label>Middle Name</label>
+                <input type="text" placeholder="Enter your Middle Name"><br>
+
+                <label>Last Name</label>
+                <input type="text" placeholder="Enter your Last Name" required><br>
+
+                <label>Email-id</label>
+                <input type="email" placeholder="Enter your valid email id"><br>
+            </div>
+            <div class="gender">
+                <label class="gender">Gender:-</label>
+                <input type="radio" id="male" name="gender" value="male" required>Male
+                <input type="radio" id="female" name="gender" value="female" required>Female
+                <input type="radio" id="No" name="gender" value="No" required>Prefer not to say
+            </div>
+            <div class="phone">
+                <div class="input-box">
+                    <label>Mobile Number</label>
+                    <input type="tel" placeholder="Please enter a 10 digit mobile number." required>
+                </div>
+                <div class="input-box">
+                    <label>Birth Date</label>
+                    <input type="date" id="date_input" required>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="address">
+                    Enter your Correspondence Address: <textarea name="addr" id="addres" rows="1"
+                        cols="50"></textarea><br><br>
+                    Enter your permanent Address: <textarea name="addr" id="addres" rows="1"
+                        cols="50"></textarea><br><br>
+                    Country:-
+                    <select class="select-box">
+                        <option> India
+                        <option> Germany
+                        <option> USA
+                        <option> China
+                        <option> Nepal
+                        <option> Bangladesh
+                        <option> SriLanka
+                    </select>
+                </div>
+            </div>
+            <div class="input-box">
+                <p>Which option best describe your current role</p>
+                <select class="select-box" name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="job">Job</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="gender">
+                <p id="quest">How you come to know about us ?</p>
+                <label for="">
+                    <input type="radio" name="source" value="freinds"
+                    class="inputRadio"
+                    > Friends
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="tv-ads"
+                    class="inputRadio"
+                    >TV Ads
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="social-media"
+                    class="inputRadio"
+                    > Social Media
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="newspaper"
+                    class="inputRadio"
+                    > Newspaper
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="other"
+                    class="inputRadio"
+                    > Other
+                </label>
+            </div>
+            <div class="gender">
+                <p id="quest">Skills you would like to improved ? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev"> Front-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev"> Back-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="app-dev"> Android App Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="soft-engineering"> Software Engineering
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> Other
+                </label>
+            </div>
+            <input class="button" type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+
+</html>
